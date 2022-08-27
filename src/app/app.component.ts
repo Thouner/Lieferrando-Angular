@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
 
   async ngOnInit() {
     await this.funcName();
-    // console.log(this.menus.filter(element => element.categories == "fried-chicken"));
+    console.log(this.menus);
   }
 
 
@@ -70,7 +70,7 @@ export class AppComponent implements OnInit {
       for (let j = 0; j < 11; j++) {
         menuElement[0].food.push(data[j])
       }
-      console.log(menuElement);
+      // console.log(menuElement);
 
     }
 
