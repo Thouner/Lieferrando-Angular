@@ -1,9 +1,56 @@
-header{
-  background-color: #FB6100;
+header {
+  background-color: rgb(251, 97, 0);
   height: 72px;
   padding: 1rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
+}
+
+.left_container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left_container span{
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.logo {
+  filter: invert(99%) sepia(17%) saturate(111%) hue-rotate(86deg) brightness(118%) contrast(100%);
+}
+
+.middle_container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_container {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.right_container img {
+  margin-left: 1rem;
+  height: 20px;
+  width: 24px;
+}
+
+.flag {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #000000 0%, #000000 33%, #fb0000 33%, #fb0000 33%, #fb0000 66%, #ffd700 66%, #ffd700 100%);
 }
