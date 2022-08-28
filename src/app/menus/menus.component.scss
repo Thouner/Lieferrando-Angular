@@ -1,0 +1,32 @@
+.grey_bg{
+  background-color: #F8F5F2;
+}
+
+.search_bar{
+  height: 56px;
+  position: static;
+  top: 0px;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .category{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    a{
+      text-decoration: none;
+      color: #000;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.for_food{
+  padding: 1rem;
+
+}

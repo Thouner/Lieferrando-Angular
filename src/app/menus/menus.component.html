@@ -1,1 +1,36 @@
-<p>menus works!</p>
+<div class="grey_bg center_container">
+  <div class="width_container">
+
+    <div class="search_bar">
+      <img src="assets/img/search.png" alt="">
+
+      <div class="category">
+        <a *ngFor="let category of foods.menus" href="">{{ category.categories }}</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="center_container">
+  <div class="width_container">
+
+    <div class="for_food">
+
+      <div *ngFor="let category of foods.menus">
+        <h2 [class.text_up]="category.categories == 'bbqs'" class="grey_bg pad1rem text_capi">{{ category.categories }}</h2>
+
+        <div *ngFor="let food of category.food" class="food_container">
+
+          <h3>{{ food.name }}</h3>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

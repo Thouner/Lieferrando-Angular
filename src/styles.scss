@@ -17,3 +17,23 @@ body{
   width: 100%;
   max-width: 1080px;
 }
+
+.pad1rem{
+  padding: 1rem;
+}
+
+.text_capi{
+  text-transform: capitalize;
+}
+
+.text_up{
+  text-transform: uppercase;
+}
+
+.food_container{
+  margin-top: 0.5rem;
+  height: 202px;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #D7D7D7;
+}

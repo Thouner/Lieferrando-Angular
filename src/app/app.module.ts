@@ -1,3 +1,5 @@
+;
+import { HeadlineComponent } from './headline/headline.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,7 +9,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { MenusComponent } from './menus/menus.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     FooterComponent,
     ShoppingCartComponent,
     MenusComponent,
-    SearchBarComponent
+    HeadlineComponent
   ],
   imports: [
     BrowserModule,
