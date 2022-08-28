@@ -1,0 +1,164 @@
+.p_relativ {
+  position: relative;
+}
+
+
+.first_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo_img {
+  position: absolute;
+  left: 50%;
+  top: 200px - 64px;
+  height: 128px;
+  width: 128px;
+  background-color: #fff;
+  border: 2px solid #D7D7D7;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .up_burger {
+    height: 20px;
+    width: 80px;
+    border: 1px solid #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .title_burger {
+    text-align: center;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .udown_burger {
+    height: 15px;
+    width: 80px;
+    border: 1px solid #000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}
+
+
+.headline {
+  min-height: 104px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      height: 20px;
+      width: 20px;
+      filter: invert(62%) sepia(61%) saturate(6728%) hue-rotate(1deg) brightness(200%) contrast(102%);
+
+      &:nth-child(5) {
+        filter: invert(90%) sepia(0%) saturate(1454%) hue-rotate(164deg) brightness(700%) contrast(69%);
+      }
+    }
+
+    u {
+      color: #FB6100;
+      font-size: 14px;
+    }
+  }
+
+  .deliver {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        color: #669297;
+        font-size: 14px;
+      }
+
+      img {
+        filter: invert(67%) sepia(8%) saturate(0%) hue-rotate(344deg) brightness(90%) contrast(87%);
+      }
+    }
+
+  }
+
+  .right_button {
+    display: flex;
+
+    button {
+      height: 48px;
+      width: 48px;
+      background: #fff;
+      border: 1px solid #D7D7D7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:first-child {
+        border-right: 0.5px solid #D7D7D7;
+
+        &:hover {
+          border: 1px  solid #125FCA;
+          border-right: 0.5px solid #125FCA;
+
+        }
+      }
+
+      &:last-child {
+        border-left: 0.5px solid #D7D7D7;
+
+        &:hover {
+          border: 1px  solid #FB6100;
+          border-left: 0.5px solid #FB6100;
+
+        }
+      }
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+
+      &:first-child {
+        img {
+          filter: invert(25%) sepia(99%) saturate(1349%) hue-rotate(199deg) brightness(97%) contrast(101%);
+        }
+      }
+
+      &:last-child {
+        img {
+
+          filter: invert(62%) sepia(61%) saturate(6728%) hue-rotate(1deg) brightness(120%) contrast(102%);
+        }
+
+      }
+    }
+  }
+}

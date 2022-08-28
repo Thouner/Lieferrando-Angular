@@ -23,10 +23,15 @@ font-size: 14px;
 }
 
 button {
-  background: none;
-  border: none;
+  background: #0A3847;
+  border: #0A3847;
   color: #fff;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.color_grey{
+  color: #b1b1b1;
 }
 
 @media screen and (max-width:1024px) {
