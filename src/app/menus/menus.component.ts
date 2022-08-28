@@ -8,6 +8,8 @@ import { FoodsService } from '../foods.service';
 })
 export class MenusComponent implements OnInit {
 
+imageFound:boolean = true;
+
   constructor(public foods: FoodsService) { }
 
   async ngOnInit() {

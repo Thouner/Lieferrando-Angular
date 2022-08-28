@@ -19,11 +19,23 @@
     <div class="for_food">
 
       <div *ngFor="let category of foods.menus">
-        <h2 [class.text_up]="category.categories == 'bbqs'" class="grey_bg pad1rem text_capi">{{ category.categories }}</h2>
+        <h2 [class.text_up]="category.categories == 'bbqs'" class="grey_bg pad1rem text_capi">{{ category.categories }}
+        </h2>
 
         <div *ngFor="let food of category.food" class="food_container">
 
-          <h3>{{ food.name }}</h3>
+          <div class="description">
+            <div>
+              <h3>{{ food.name }}</h3>
+              <span>{{ food.dsc }}</span>
+            </div>
+            <span>{{ food.price }} €</span>
+          </div>
+
+          <div>
+            <img src="{{ food.img ? food.img : 'assets/img/fork.jpg'  }}" alt="">
+           <!-- <img src="assets/img/fork.jpg" alt=""> -->
+          </div>
 
         </div>
 

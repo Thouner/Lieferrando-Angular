@@ -26,7 +26,25 @@
   }
 }
 
+
 .for_food{
   padding: 1rem;
+  .food_container{
+    display: flex;
+    justify-content: space-between;
 
+    .description{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    img{
+      height: 170px;
+      width: 170px;
+      object-position: center;
+      object-fit: cover;
+      margin-left: 0.5rem;
+    }
+  }
 }
