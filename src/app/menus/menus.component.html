@@ -33,15 +33,17 @@
           </div>
 
           <div>
-            <img src="{{ food.img.length > 0 ? food.img : 'assets/img/fork.jpg'  }}" alt="">
-            <!-- <ng-template #other><img src="assets/img/fork.jpg" alt=""></ng-template> -->
-           <!-- <img src="assets/img/fork.jpg" alt=""> -->
+            <img class="food_img" src="{{ food.img }}" alt="" onerror="this.src='assets/img/fork.jpg'">
+          </div>
+
+          <div class="abb_button" >
+            <img  src="assets/img/plus.png" alt="">
           </div>
 
         </div>
 
-
       </div>
+
 
     </div>
 

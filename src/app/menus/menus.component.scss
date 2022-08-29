@@ -1,8 +1,8 @@
-.grey_bg{
+.grey_bg {
   background-color: #F8F5F2;
 }
 
-.search_bar{
+.search_bar {
   height: 56px;
   position: static;
   top: 0px;
@@ -13,12 +13,13 @@
   align-items: center;
   gap: 1rem;
 
-  .category{
+  .category {
     height: 32px;
     display: flex;
     align-items: center;
     gap: 30px;
-    a{
+
+    a {
       text-decoration: none;
       color: #000;
       text-transform: capitalize;
@@ -27,24 +28,49 @@
 }
 
 
-.for_food{
+.for_food {
   padding: 1rem;
-  .food_container{
+
+
+  .food_container {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
-    .description{
+    &:hover {
+      border: 1px solid #146EEB;
+    }
+
+    .description {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
-    img{
+    .food_img {
       height: 170px;
       width: 170px;
       object-position: center;
       object-fit: cover;
       margin-left: 0.5rem;
+      margin-right: 32px;
     }
+  }
+}
+
+.abb_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D7D7D7;
+  border-bottom: 1px solid #D7D7D7;
+
+  img {
+    filter: invert(26%) sepia(87%) saturate(1844%) hue-rotate(203deg) brightness(89%) contrast(95%);
   }
 }
