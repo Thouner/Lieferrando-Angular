@@ -33,7 +33,8 @@
           </div>
 
           <div>
-            <img src="{{ food.img ? food.img : 'assets/img/fork.jpg'  }}" alt="">
+            <img src="{{ food.img.length > 0 ? food.img : 'assets/img/fork.jpg'  }}" alt="">
+            <!-- <ng-template #other><img src="assets/img/fork.jpg" alt=""></ng-template> -->
            <!-- <img src="assets/img/fork.jpg" alt=""> -->
           </div>
 
