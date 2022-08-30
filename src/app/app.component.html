@@ -14,10 +14,19 @@
   </div>
 </div> -->
 
-<app-header></app-header>
 
-<app-headline></app-headline>
-<app-menus></app-menus>
-<app-shopping-cart></app-shopping-cart>
+<!-- <div *ngIf="!pageLoaded" class="loader">Loading...</div> -->
 
-<app-footer></app-footer>
+<app-loader *ngIf="!pageLoaded" class="loader"></app-loader>
+
+<div *ngIf="pageLoaded" class="content">
+
+  <app-header></app-header>
+
+  <app-headline></app-headline>
+  <app-menus></app-menus>
+  <app-shopping-cart></app-shopping-cart>
+
+  <app-footer></app-footer>
+
+</div>
