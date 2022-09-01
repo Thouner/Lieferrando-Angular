@@ -2,6 +2,49 @@
   width: 344px;
   flex-shrink: 0;
   height: auto;
-  // border-left: 2px solid #dddddd;
-  background-color: aqua;
+  position: sticky;
+  top: 0;
+
+}
+
+.head_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #EBEBEB;
+
+  h2 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 16px;
+    color: #0A3847;
+  }
+}
+
+.temporeie_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 1rem;
+
+  img {
+    height: 40px;
+    width: 40px;
+    padding-bottom: 0.5rem;
+    filter: invert(19%) sepia(18%) saturate(1702%) hue-rotate(148deg) brightness(95%) contrast(101%);
+  }
+
+  h2 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+    color: #0A3847;
+  }
+
+  span {
+    text-align: center;
+    font-size: 14px;
+    color: #669297;
+  }
 }
