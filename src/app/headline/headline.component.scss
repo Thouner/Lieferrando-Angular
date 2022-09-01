@@ -1,16 +1,23 @@
 .p_relativ {
   position: relative;
+
 }
 
+.border_right{
+  border-right: 2px solid #dddddd;
+  box-sizing: border-box;
+}
 
 .first_img {
   height: 200px;
   width: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 .logo_img {
+
   position: absolute;
   left: 50%;
   margin-left: -64px;

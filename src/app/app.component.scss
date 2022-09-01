@@ -2,3 +2,19 @@ bg {
   background-color: #FB6100;
 }
 
+.split_menu{
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row nowrap;
+  width: 100%;
+
+.menucart{
+  width: calc(100% - 344px);
+  box-sizing: border-box;
+
+}
+
+}

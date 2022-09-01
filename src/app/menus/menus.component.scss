@@ -2,6 +2,11 @@
   background-color: #F8F5F2;
 }
 
+.border_right{
+  border-right: 2px solid #dddddd;
+  box-sizing: border-box;
+}
+
 .search_bar {
   height: 56px;
   position: static;

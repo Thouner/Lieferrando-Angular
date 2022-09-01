@@ -1,31 +1,18 @@
-<!-- <h1>restaurants</h1>
-
-<div *ngFor="let menu of menus">
-
-  <h2>{{ menu.categories }}</h2>
-
-  <div *ngFor="let foods of menu.food">
-
-    <h3>{{ foods.name }}</h3>
-
-    <span>{{ foods.dsc }}</span>
-    <img src="{{ foods.img }}" alt="">
-    <br><br>
-  </div>
-</div> -->
-
-
-<!-- <div *ngIf="!pageLoaded" class="loader">Loading...</div> -->
-
 <app-loader *ngIf="!pageLoaded" class="loader"></app-loader>
 
 <div *ngIf="pageLoaded" class="content">
 
   <app-header></app-header>
 
-  <app-headline></app-headline>
-  <app-menus></app-menus>
-  <app-shopping-cart></app-shopping-cart>
+  <div class="split_menu">
+
+    <div class="menucart">
+      <app-headline></app-headline>
+      <app-menus></app-menus>
+    </div>
+    <app-shopping-cart class="shopcart"></app-shopping-cart>
+
+  </div>
 
   <app-footer></app-footer>
 
