@@ -1,6 +1,6 @@
 <app-loader *ngIf="!pageLoaded" class="loader"></app-loader>
 
-<div *ngIf="pageLoaded" class="content">
+<div *ngIf="pageLoaded" (click)="closeCountry()" class="content">
 
   <app-header></app-header>
 

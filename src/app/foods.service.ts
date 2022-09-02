@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class FoodsService {
 
+  displayCountry:boolean = false;
 
   menusCategories: string[] = ['best-foods', 'bbqs', 'burgers', 'fried-chicken', 'pizzas', 'porks', 'sausages', 'desserts', 'drinks'];
 

@@ -6,9 +6,9 @@
   </div>
   <div class="middle_container cursor_default"><b>Menu card</b></div>
   <div class="right_container">
-    <div class="flag">
+    <div (click)="openCountry($event)" class="flag">
 
-      <div class="language">
+      <div (click)="porpagation($event)" *ngIf="land.displayCountry" class="language">
 
         <div class="lan_left">
 
@@ -16,26 +16,10 @@
 
           <div class="countrys">
 
-            <span><img src="https://flagcdn.com/w40/de.png" alt="">Germany</span>
-            <span><img src="https://flagcdn.com/w20/au.png" alt="">Australia</span>
-            <span><img src="https://flagcdn.com/w20/be.png" alt="">Belgium</span>
-            <span><img src="https://flagcdn.com/w20/bg.png" alt="">Bulgaria</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Denmark</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">France</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Ireland</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Israel</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Italy</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Canada</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Luxembourg</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">New Zealand</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Netherlands</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Austria</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Poland</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Switzerland</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Slovakia</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">Spain</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">USA</span>
-            <span><img src="https://flagcdn.com/w20/gb.png" alt="">United Kingdom</span>
+            <span *ngFor="let land of countrys; let i = index" (click)="selectCountry(i)"
+              [class.font_bold]="land.select"><img class="flag_img" src="https://flagcdn.com/w40/{{ land.country }}.png"
+                alt="">{{ land.name }}<img [class.opacity0]="!land.select" class="flag_arrow" src="assets/img/arrow.png"
+                alt=""></span>
 
           </div>
 
@@ -44,19 +28,25 @@
         <div class="lan_right">
 
           <h3>Language</h3>
-          <span class="select"><b>English</b> <img src="assets/img/arrow.png" alt=""></span>
-          <span>Deutsch</span>
-          <span>Français</span>
-          <span>Nederlands</span>
-          <span>Polski</span>
-          <span>Dansk</span>
-          <span>Български</span>
-          <span>Italiano</span>
+          <span class="select cursor_pointer"><b class="bluehover">English</b> <img src="assets/img/arrow.png"
+              alt=""></span>
+          <span class="color_grey">Deutsch</span>
+          <span class="color_grey">Français</span>
+          <span class="color_grey">Nederlands</span>
+          <span class="color_grey">Polski</span>
+          <span class="color_grey">Dansk</span>
+          <span class="color_grey">Български</span>
+          <span class="color_grey">Italiano</span>
 
         </div>
       </div>
 
     </div>
     <img src="assets/img/menu.png" alt="">
+
+    <div class="my_account">
+
+    </div>
+
   </div>
 </header>

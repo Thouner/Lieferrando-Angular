@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { async } from '@angular/core/testing';
+import { FoodsService } from './foods.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,8 @@ import { async } from '@angular/core/testing';
 export class AppComponent implements OnInit {
 
   pageLoaded: any = false;
+
+  constructor(public land: FoodsService) { }
 
   async ngOnInit() {
 
@@ -23,6 +25,9 @@ export class AppComponent implements OnInit {
   }
 
 
-
-
+  closeCountry() {
+    if (this.land.displayCountry == true) {
+      this.land.displayCountry = false;
+    }
+  }
 }
